@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+psycopg2 = "*"
+pyjwt = "*"
+flasgger = "*"
+python-decouple = "*"
+werkzeug = "*"
+config = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
