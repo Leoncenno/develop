@@ -1,18 +1,18 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
+psycopg2-binary = "*"
 flask = "*"
-psycopg2 = "*"
-pyjwt = "*"
+flask-jwt-extended = "*"
 flasgger = "*"
 python-decouple = "*"
 werkzeug = "*"
-config = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"
