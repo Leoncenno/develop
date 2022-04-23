@@ -7,5 +7,5 @@ from decouple import config, Config
 app = Flask(__name__)
 app.config["DEBUG"] = True
 swagger = Swagger(app)
-app.config["JWT_SECRET_KEY"] = config('SECRET_KEY')
+app.config["JWT_SECRET_KEY"] = 'secret'
 jwt = JWTManager(app)
