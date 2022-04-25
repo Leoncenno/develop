@@ -1,8 +1,8 @@
 import random
 import string
 
-email = (''.join(random.choices(string.ascii_lowercase, k=5))) + "@gmail.com"
-username = (''.join(random.choices(string.ascii_lowercase, k=5)))
+email = (''.join(random.sample(string.ascii_lowercase, k=5))) + "@gmail.com"
+username = (''.join(random.sample(string.ascii_lowercase, k=5)))
 
 questions = {"question": "What is a test?"}
 
@@ -50,6 +50,3 @@ wrong_input_login = {"username": "ronald", "password": "okeli"}
 
 missing_data_login = {"username": "ronald", "password": ""}
 
-
-
-print(email)

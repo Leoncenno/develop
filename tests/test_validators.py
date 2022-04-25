@@ -1,7 +1,7 @@
 import unittest
 from app.validations import Validators
 
-class test_validators(unittest.TestCase):
+class Test_Validators(unittest.TestCase):
     def setUp(self):
         self.val = Validators()
         
