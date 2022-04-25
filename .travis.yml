@@ -14,8 +14,8 @@ install:
   - pip3 install pytest-cov
 
 before_script:
-  - psql -c "CREATE DATABASE test_StackOverflow;" -U postgres
-  - psql -c "CREATE USER postgres WITH PASSWORD 'root';" -U postgres
+  - psql -c "CREATE DATABASE StackOverflow;" -U postgres
+  - psql -c "ALTER USER postgres PASSWORD 'root';" -U postgres
 
 script:
  - pytest --cov=app tests/
