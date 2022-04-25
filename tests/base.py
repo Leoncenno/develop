@@ -9,14 +9,13 @@ from tests.__init__ import (questions, get_all_questions, get_answers_for_one_qu
                 empty_string_answer_post, empty_string_description_post, empty_string_question_post, empty_string_update_question,\
                 wrong_input_answer, wrong_input_description, wrong_input_login, wrong_input_question, wrong_input_sign_up,\
                 wrong_input_update_question, sign_up, login, missing_data_login, missing_data_sign_up)
-
-
-
+from dbconfig import TestConfig
 
 
 db = DbConnection()
 cur = db.cur
 
+app.config.from_object('dbconfig.TestConfig')
 
 class TestUser(unittest.TestCase):
     def setUp(self):
