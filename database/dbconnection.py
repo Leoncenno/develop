@@ -4,7 +4,6 @@ from decouple import config
 from dbconfig import DevelopmentConfig
 from app.app import app
 
-
 app.config.from_object('dbconfig.DevelopmentConfig')
 
 class DbConnection():  # connect to the StackOverflow database

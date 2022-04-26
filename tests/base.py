@@ -12,10 +12,10 @@ from tests.__init__ import (questions, get_all_questions, get_answers_for_one_qu
 from dbconfig import TestConfig
 
 
+app.config.from_object('dbconfig.TestConfig')
 db = DbConnection()
 cur = db.cur
 
-app.config.from_object('dbconfig.TestConfig')
 
 class TestUser(unittest.TestCase):
     def setUp(self):
