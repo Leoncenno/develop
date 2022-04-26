@@ -5,7 +5,7 @@ class Config:
 class DevelopmentConfig(Config):
 
     DEBUG = True
-    TESTNG = True
+    TESTNG = False
     DATABASE_URL = 'postgresql://postgres:root@localhost/StackOverflow'
 
 class TestConfig(Config):
