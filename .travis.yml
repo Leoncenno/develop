@@ -10,18 +10,19 @@ addons:
   postgresql: "10.2"
   apt:
     packages:
-    - postgresql-10
-    - postgresql-client-10
+      - postgresql-10
+      - postgresql-client-10
+
+before_script:
+  - cp ./.travis.database.yml ./database.yml
+
 env:
   global:
-  - PGPORT=5432
-  - PGUSER=postgres
+    - PGPORT=5432
+    - PGUSER=postgres
 
 install:
   - pip3 install -r requirements.txt
-
-before_script:
-  - cp config/database.yml.travis config/database.yml
 
 script:
   - pytest test.py
