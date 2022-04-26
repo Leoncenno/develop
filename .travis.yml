@@ -14,7 +14,7 @@ addons:
       - postgresql-client-10
 
 before_script:
-  - cp ./.travis.database.yml ./database.yml
+  - psql -c 'create database StackOverflow_test;' -U postgres
 
 env:
   global:

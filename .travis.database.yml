@@ -1,6 +1,0 @@
-test:
-  adapter: postgresql
-  database: StackOverflow
-  username: postgres
-  password: root
-  host: http://127.0.0.1:5000
