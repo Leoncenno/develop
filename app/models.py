@@ -7,6 +7,7 @@ from flask_jwt_extended import create_access_token, jwt_required
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
+app.config.from_object('dbconfig.DevelopmentConfig')
 
 db = DbOperations()
 val = Validators()
