@@ -6,20 +6,9 @@ python:
 services:
   - postgresql
 
-addons:
-  postgresql: "10.2"
-  apt:
-    packages:
-      - postgresql-10
-      - postgresql-client-10
-
 before_script:
   - psql -c 'create database StackOverflow_test;' -U postgres
 
-env:
-  global:
-    - PGPORT=5432
-    - PGUSER=postgres
 
 install:
   - pip3 install -r requirements.txt
