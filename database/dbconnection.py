@@ -1,7 +1,11 @@
 import psycopg2
 import psycopg2.extras
 from decouple import config
+from dbconfig import DevelopmentConfig
+from app.app import app
 
+
+app.config.from_object('dbconfig.DevelopmentConfig')
 
 class DbConnection():  # connect to the StackOverflow database
     def __init__(self):
@@ -13,11 +17,7 @@ class DbConnection():  # connect to the StackOverflow database
 
             # connect to StackOverflow server
             print('connecting to StackOverflow Database...')
-            self.conn = psycopg2.connect(
-                host='localhost',
-                database='StackOverflow',
-                user='postgres',
-                password='root')
+            self.conn = psycopg2.connect(app.config["DATABASE_URL"])
 
             self.cur = self.conn.cursor(
                 cursor_factory=psycopg2.extras.RealDictCursor)  # create a cursor
