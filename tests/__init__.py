@@ -44,9 +44,9 @@ wrong_input_sign_up = {"firstname": "Smith", "lastname": "Okello", "email": "smi
 missing_data_sign_up = {"firstname": "Smith", "lastname": "", "email": "smith@gmail.com",
                    "password": "okeli", "dateofbirth": "1994-04-20", "username": "smith"}
 
-login = {"username": "ronald", "password": "ron"}
+login = {"username": "ronaldo", "password": "ron"}
 
-wrong_input_login = {"username": "ronald", "password": "okeli"}
+wrong_input_login = {"username": "ronaldo", "password": "okeli"}
 
-missing_data_login = {"username": "ronald", "password": ""}
+missing_data_login = {"username": "ronaldo", "password": ""}
 
