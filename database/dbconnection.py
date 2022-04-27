@@ -5,7 +5,6 @@ from dbconfig import DevelopmentConfig
 from app.app import app
 
 app.config.from_object('dbconfig.DevelopmentConfig')
-app.config.from_object('dbconfig.TestConfig')
 
 class DbConnection():  # connect to the StackOverflow database
     def __init__(self):
