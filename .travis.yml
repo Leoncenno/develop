@@ -11,7 +11,7 @@ env:
 
 before_script:
   - psql -c 'create database StackOverflow;' -U postgres
-  - psql -c 'INSERT INTO user_details (Ronald, Okello, ronaldgmail.com, ron, 1994-02-04, ronaldo);'
+  - psql -c 'INSERT INTO user_details (Ronald, Okello, ronaldgmail.com, ron, 1994_02_04, ronaldo);'
 
 
 install:
