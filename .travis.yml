@@ -6,6 +6,9 @@ python:
 services:
   - postgresql
 
+env:
+  - APP_MODE=TEST
+
 before_script:
   - psql -c 'create database StackOverflow;' -U postgres
 

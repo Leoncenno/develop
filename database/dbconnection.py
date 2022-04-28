@@ -1,10 +1,13 @@
+from re import I
 import psycopg2
 import psycopg2.extras
 from decouple import config
 from dbconfig import DevelopmentConfig
 from app.app import app
+import os
 
-app.config.from_object('dbconfig.DevelopmentConfig')
+config = 'dbconfig.TestConfig' if os.getenv('APP_MODE') == 'TEST' else 'dbconfig.DevelopmentConfig'
+app.config.from_object(config)
 
 class DbConnection():  # connect to the StackOverflow database
     def __init__(self):

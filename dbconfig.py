@@ -12,4 +12,4 @@ class TestConfig(Config):
 
     DEBUG = False
     TESTING = True
-    DATABASE_URL = 'postgresql://postgres:@localhost/StackOverflow'
+    DATABASE_URL = 'postgres://postgres:@localhost/StackOverflow'
