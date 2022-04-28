@@ -13,6 +13,7 @@ from dbconfig import TestConfig
 
 
 app.config.from_object('dbconfig.TestConfig')
+
 db = DbConnection()
 cur = db.cur
 
