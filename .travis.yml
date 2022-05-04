@@ -12,7 +12,6 @@ env:
 before_script:
   - export APP_MODE=TEST
   - psql -c 'create database stackoverflow_test;' -U postgres
-  - psql -c 'INSERT INTO user_details (first_name, last_name, email, password, date_of_birth, user_name) VALUES (Ronald, Okello, ronald@gmail.com, ron, 1994-04-02, ronaldo);'
 
 
 install:
