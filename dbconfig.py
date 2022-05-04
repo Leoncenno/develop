@@ -6,10 +6,10 @@ class DevelopmentConfig(Config):
 
     DEBUG = True
     TESTNG = False
-    DATABASE_URL = 'postgresql://postgres:root@localhost/stackoverflow'
+    DATABASE_URL = 'postgresql://postgres:root@localhost/StackOverflow'
 
 class TestConfig(Config):
 
     DEBUG = False
     TESTING = True
-    DATABASE_URL = 'postgres://postgres:@localhost/stackoverflow'
+    DATABASE_URL = 'postgres://postgres:root@localhost/stackoverflow_test'

@@ -4,6 +4,8 @@ import psycopg2.extras
 from decouple import config
 from dbconfig import DevelopmentConfig
 from app.app import app
+from dotenv import load_dotenv
+load_dotenv()
 import os
 
 config = 'dbconfig.TestConfig' if os.getenv('APP_MODE') == 'TEST' else 'dbconfig.DevelopmentConfig'
