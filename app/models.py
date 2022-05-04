@@ -205,6 +205,7 @@ class Models():
             return jsonify('Please enter a valid username!'), 406
         else:
             user = db.check_for_user(username)
+            print(user)
             is_correct_password = check_password_hash(
                 user['password'], request.json["password"])
             if is_correct_password:
