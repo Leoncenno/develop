@@ -46,7 +46,7 @@ missing_data_sign_up = {"firstname": "Smith", "lastname": "", "email": "smith@gm
 
 login = {"username": "smithokello", "password": "okeli"}
 
-wrong_input_login = {"username": "ronaldo", "password": "okeli"}
+wrong_input_login = {"username": "smithokello", "password": "okeli"}
 
-missing_data_login = {"username": "ronaldo", "password": ""}
+missing_data_login = {"username": "smithokello", "password": ""}
 
