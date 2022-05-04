@@ -25,4 +25,4 @@ class TestUser(TestUser):
 
     def test_missing_field_login(self):
         response = self.missing_field_login(missing_data_login)
-        self.assertEqual(response.status_code, 401)
+        self.assertEqual(response.status_code, 406)
