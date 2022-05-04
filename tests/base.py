@@ -27,13 +27,11 @@ class TestUser(unittest.TestCase):
         return response
 
     def wrong_user_signup(self, wrong_input_sign_up):
-        response = self.client.post('/register',\
-        data = json.dumps(wrong_input_sign_up), content_type = 'application/json')
+        response = self.client.post('/register', data = json.dumps(wrong_input_sign_up), content_type = 'application/json')
         return response
 
     def missing_field_signup(self, missing_data_sign_up):
-        response = self.client.post('/register',\
-        data = json.dumps(missing_data_sign_up), content_type = 'application/json')
+        response = self.client.post('/register', data = json.dumps(missing_data_sign_up), content_type = 'application/json')
         return response
 
     def signin_user(self, login):
@@ -46,13 +44,11 @@ class TestUser(unittest.TestCase):
         return response_data["Token"]
 
     def wrong_login_input(self, wrong_input_login):
-        response = self.client.post('/login',\
-        data = json.dumps(wrong_input_login), content_type = 'application/json')
+        response = self.client.post('/login', data = json.dumps(wrong_input_login), content_type = 'application/json')
         return response
 
     def missing_field_login(self, missing_data_login):
-        response = self.client.post('/login',\
-        data = json.dumps(missing_data_login), content_type = 'application/json')
+        response = self.client.post('/login', data = json.dumps(missing_data_login), content_type = 'application/json')
         return response
 
     def post_a_question(self, post_question):
