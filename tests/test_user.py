@@ -1,5 +1,5 @@
 from tests.base import TestUser
-from tests.__init__ import (questions, wrong_input_login, wrong_input_sign_up, sign_up, login, missing_data_login, missing_data_sign_up)
+from tests.__init__ import (questions, wrong_input_login, wrong_input_sign_up, sign_up, login_data, missing_data_login, missing_data_sign_up)
 
 
 class TestUser(TestUser):
@@ -16,7 +16,7 @@ class TestUser(TestUser):
         self.assertEqual(response.status_code, 406)
 
     def test_signin_user(self):
-        response = self.signin_user(login)
+        response = self.signin_user(login_data)
         self.assertEqual(response.status_code, 200)
 
     def test_wrong_login_input(self):
