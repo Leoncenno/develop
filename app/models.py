@@ -207,7 +207,7 @@ class Models():
             user = db.check_for_user(username)
             print(user)
             is_correct_password = check_password_hash(
-                user['password'], request.json["password"])
+                user["password"], request.json["password"])
             if is_correct_password:
                 access_token = create_access_token(identity=username)
                 return jsonify({'Token': access_token}), 200
