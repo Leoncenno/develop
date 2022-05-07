@@ -10,6 +10,7 @@ flask-jwt-extended = "*"
 flasgger = "*"
 python-decouple = "*"
 werkzeug = "*"
+gunicorn = "*"
 
 [dev-packages]
 autopep8 = "*"
