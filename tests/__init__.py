@@ -35,7 +35,7 @@ empty_string_update_question = {"question": ""}
 
 wrong_input_update_question = {"question": "123456"}
 
-sign_up = {"firstname": "Smith", "lastname": "Okello", "email": 'smith@gmail.com',
+sign_up = {"firstname": "Smith", "lastname": "Okello", "email": "smith@gmail.com",
                    "password": "okeli", "dateofbirth": "1994-04-20", "username": "smithokello"}
 
 wrong_input_sign_up = {"firstname": "Smith", "lastname": "Okello", "email": "smith@gmail.com",
